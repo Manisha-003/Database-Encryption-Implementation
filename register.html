@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://images.squarespace-cdn.com/content/v1/6059ef5d59f1411908292205/4370a25e-b47d-4647-a0fa-36fce5eb5ea5/Hacking-Cybersecurity.gif') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: rgb(215, 232, 238);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      color: #222;
+      margin-bottom: 30px;
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+      outline: none;
+    }
+    .login-button {
+      width: 100%;
+      padding: 12px;
+      background: #2979ff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .login-button:hover {
+      background: #1565c0;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .register-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Database Encryption Implementation</h1>
+    <form action="/register" method="post">
+      <div class="input-group">
+        <label>Email address:</label>
+        <input type="email" name="username" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Create a password" required>
+      </div>
+      <div class="input-group">
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+      </div>
+      <button type="submit" class="login-button">Signup</button>
+    </form>
+    <div class="register-link">
+      <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
+  </div>
+</body>
+</html>
